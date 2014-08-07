@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+    <title>HTML5 Drawing</title>
+         
+      <script> src="includes/modernizr.js"</script>
+      
+          
+</head>
+<body>
+    <div id="container">
+        <h1>Homework</h1>
+
+<h2>Rectangle</h2>
+	
+       	<canvas id="Canvas1" width ="400" height="300"> <!--id of canvas 1-->
+        	Your browser does not support canvas. <!--fallback content-->
+        </canvas>    
+        
+        
+         <canvas id="Canvas2" width ="400" height="300"> <!--id of canvas 1-->
+        	Your browser does not support canvas. <!--fallback content-->
+        </canvas>    
+        
+        
+        
+        <canvas id="Canvas3" width ="400" height="300"> <!--id of canvas 1-->
+        	Your browser does not support canvas. <!--fallback content-->
+        </canvas>    
+        
+        
+         <canvas id="Canvas4" width ="400" height="300"> <!--id of canvas 1-->
+        	Your browser does not support canvas. <!--fallback content-->
+        </canvas>    
+        
+        
+         <canvas id="Canvas5" width ="400" height="300"> <!--id of canvas 1-->
+        	Your browser does not support canvas. <!--fallback content-->
+        </canvas>    
+        
+         <canvas id="Canvas6" width ="400" height="300"> <!--id of canvas 1-->
+        	Your browser does not support canvas. <!--fallback content-->
+        </canvas>    
+        
+        
+         <canvas id="Canvas7" width ="400" height="300"> <!--id of canvas 1-->
+        	Your browser does not support canvas. <!--fallback content-->
+        </canvas>    
+        
+
+        </div>
+        
+        <script>
+        //Draw Rectangle here
+
+  window.onload = function(){ //anytime the window is loaded this will run...
+				
+				var theCanvas = document.getElementById("Canvas1"); //create a variable that holds the canvas..using canvas1
+
+			  				
+				if(theCanvas){
+					//Get Context
+					var ctx = theCanvas.getContext("2d"); //create a variable getcontext 2d
+				
+	
+
+
+             if(ctx){
+             
+             //Draw a stroked Rectangle
+							ctx.strokeStyle = "black"; //ctx call to context variable
+							ctx.lineWidth =2;
+							ctx.fillStyle = "#3358A1";
+							
+//draw the rectangle...
+							//strokeRect(posX, posY, Width, Height)
+							ctx.strokeRect(0,0, 50,100);	//0 to the right and 0 down	50 width 100 height
+							ctx.fillRect(0, 0, 50, 100);
+							
+							}
+							
+							}
+							
+						
+						var theCanvas = document.getElementById("Canvas2"); //create a variable that holds the canvas..using canvas1
+
+			  				
+				if(theCanvas){
+					//Get Context
+					var ctx2 = theCanvas.getContext("2d"); //create a variable getcontext 2d
+				
+	
+
+
+             if(ctx){
+             
+             //Set the Style of the Rectangle
+							ctx.strokeStyle = "black"; //ctx call to context variable
+							ctx.lineWidth =2;
+							ctx.fillStyle = "#FF944D";
+							
+//draw the rectangle...
+							//strokeRect(posX, posY, Width, Height)
+							ctx.strokeRect(60,0, 100,100);	//0 to the right and 0 down	50 width 100 height
+							ctx.fillRect(60, 0, 100, 100);
+							
+						
+			
+			
+			
+			
+		    }	
+ 
+       }
+       
+
+    
+</script>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
