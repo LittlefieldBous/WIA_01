@@ -1,0 +1,120 @@
+/*Amy Littlefield-Bousamra
+Web Interaction & Animation
+Instructor: Eric Silvay
+Full Sail University
+
+*/
+
+
+
+
+/*body {
+    background-color: #BBBBBB;
+    max-width: 960px;
+    margin: 36px auto;
+}*/
+
+/*.container * {
+    border: 1px solid black;
+}*/
+
+
+/* {
+    margin: 0;
+    padding: 0;
+}*/
+
+/*css classes for d3.js*/
+
+.highlight{
+	color:#C64C6F;
+	font-weight: 600;
+}
+
+
+.item{
+	padding-left: 30px;
+}
+
+.bigger{
+	font-size:150%;
+}
+
+
+
+/*end of d3.js css*/
+
+
+
+#Canvas1 {
+				border:solid 2px black;
+			}
+
+
+a:hover{ color: coral; }
+a:link { color: darkred; }
+
+#container > ul{
+    border: 1px solid black;
+}
+
+
+
+.container {
+    width: 100%; /*900px*/
+    margin: 0 auto;
+    overflow: hidden;
+    background-color:#FDF6E3 /*off white*/
+}
+
+/*nav > ul {
+    background-color: palevioletred;
+}*/
+
+
+#menu > ul > li{
+    font-size: 26px;
+    font-family: Verdana, 'Libre Baskerville', sans-serif;
+    color:#ff8c00; /*orange*/
+}
+
+#menu ol > li{
+    font-size:18px;
+    color: #47AFAF; /*teal*/
+font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+}
+
+
+#menu ol li li {
+    font-size: 14px;
+    color:#262626;
+}
+
+#menu ol li li li {
+    color: darkred;
+    font-size:12px;
+}
+
+ul li{
+    color:green;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+/*div+ul{
+	background-color: yellow;
+}*/
+
+
+
+
+
+
+
+
+
+
+
