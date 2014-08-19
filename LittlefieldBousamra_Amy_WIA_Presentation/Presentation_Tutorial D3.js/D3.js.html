@@ -1,0 +1,622 @@
+<!doctype html>
+
+<!--Amy Littlefield-Bousamra
+Web Interaction & Animation
+Instructor: Eric Silvay
+Full Sail University-->
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/styles/sunburst.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+                <!--<section> go here-->
+                
+                <section>
+                 <h3>Learning D3.js by Creating a Pie Chart</h3>
+                 <h4>By Amy Littlefield-Bousamra</h4>
+                 <h4>Full Sail University</h4>
+                </section>
+                            	
+              <section> <!--creates its own page-->
+               <h2>Learning D3.js</h2>
+               <h3>What is D3.js?</h3>
+             <p>D3.js is a javaScript library used for manipulating data</p>
+             <p>D3.js was created by Mike Bostock during his doctorate studies at Stanford.</p> 
+              </section>
+              
+              <section>
+               <h3>What is D3.js used for?</h3>
+               <p> D3.js is used for displaying many forms of data.</p>
+               <img src="images/d3map.png" alt="photo of a map made by D3.js" width="700px" height="525px"title="d3.js"/> 
+              </section>
+              
+              <section>
+               <h3>What are the advantages of using D3.js?</h3>
+               <p>When a developer needs users to interact with data on a webpage D3.js allows designers to build a data visualization framework that fits their needs. </p>
+              </section>
+                
+              <section>
+               <h3>Other advantages of using D3.js:</h3>
+              <ul>
+              <li>Allows the designer to create transitions & animations</li>
+              <li>Includes built in physics that allows for gravity and friction</li>
+              <li>Provides click and drag behaviors</li>
+              </ul>
+              <a href="http://techslides.com/over-2000-d3-js-examples-and-demos/" target ="_blank">Go to D3js Examples and Demos</a>
+              </section>
+
+               <section>
+               <h3>How does one begin learning D3.js?</h3>
+               <p>Visit the D3.js website and download the library</p>
+               <img src="images/website.png" alt="photo of website D3.js"  title="d3.js"/>
+                <a href="http://d3js.org/" target ="_blank">Go to D3js.org</a>
+               </section>
+                        
+            <section>           
+              <h3>Setting up D3.js</h3>                
+    		<h4>To get started download the zip file or link to the latest release</h4>
+    	    <img src="images/dowloadd3.png" alt="how to download from d3.js" title="d3.js"/>
+    		</section>
+    		       
+            <section>
+            <h3>Place both JS script tags at the bottom before the ending body tag</h3>            
+            <p>Make sure to place the d3.min.js script tag before the main.js script tag</p>
+            <pre><code>
+<script src="js/d3.min.js"></script>
+<script src="js/piegraph.js"></script>
+</body>
+</html>
+        </code>
+    		</section>
+
+    		 <section>           
+              <h3>Place CSS link tags at the top</h2> 
+             <pre><code>
+<head>
+<meta charset="UTF-8">
+<title>Info</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+        </code>
+            
+    		</section>
+    		
+    		<section>
+    		<h2>documents and Folders</h2>
+    	   <ul>
+    		<li>HTML document/s</li>
+    		<li>CSS Folder</li>
+    		<li>JS Folder</li>
+    		<li>Image Folder</li>
+           </ul>
+    		
+    		 <img src="images/folders.png" alt="photo of folders"  title="d3.js"/>
+    		
+    		</section>
+    		    		
+    <section>
+    		  <section>
+    		  <h2> CSS Folder</h2>
+    		  <img src="images/cssdocs.png" alt="photo of folders"  title="d3.js"/>
+              </section>
+              
+    		  <section>
+    		  <h2>JS Folder</h2>
+    		  <img src="images/jsdocs.png" alt="photo of folders"  title="d3.js"/>
+    		  </section>
+    		  
+    		  <section>
+    		  <h2>Image Folder: Here's another of D3.js Example:</h2>
+    		   <img src="images/barchart2.png" alt="photo of folders"  title="d3.js"/>
+    		   <p> Now that all the folders and documents are set-up let's learn how D3.JS Works!</p>
+    		  </section>
+    </section>
+    		  
+    		  
+    		   <section>
+    		  <h4>The Learning Process</h4>
+    		  <p>When initially learning D3.js I followed along with a tutorial by Ray Villalobos at Lynda.com. The name of the tutorial is: Data Visualization with D3.js.I began playing around with the concepts. This included drawing shapes inside an html document using svg and creating a bar chart. I also watched other tutorials and looked to many resources available on the web for designers wanting to learn more about d3.js.</p>
+    		   </section>
+    		   
+    		   
+    		   <section data-background="images/lblue.jpg" data-background-repeat = "repeat" data-background-size="200px">
+    		   <h3>Here is a picture of my first bar chart created with D3.js</h3>
+    		   <img src="images/barchart.png" alt="photo of folders" width="550px" height="400px" title="d3.js"/>
+    		  </section>
+    		  
+    		  <section>
+    		   <h3>Learning D3.js</h3>
+    		   <p>Creating a chart is a good place to begin learning D3.js. This D3.js tutorial will be on how to make an animated pie chart</p>
+    		  </section>
+    		  
+    		   <section data-background="images/lblue.jpg" data-background-repeat = "repeat" data-background-size="200px">
+    		   <h3>Learning D3.js Pie Chart</h3>
+    	  <img src="images/piechart2.png" alt="photo of pie chart"  title="d3.js"/>
+    	  <p>Let's view how it animates!</p>
+    		  </section>
+
+    		   <section>
+    		  <h3>D3.js A different Concept</h3>
+    		  <p>Before learning D3.js it is important to understand that although it uses many of the web standards such as html, css, javaScript, jQuery and other familiar concepts it has another approach. Each tutorial explained this approach slightly different. I will provide two explanations to keep in mind as we explore how D3.js works.</p>
+    		  
+    		  </section>
+    		  
+    		  <section>
+    		<h3>D3.js A different Approach</h3>
+    		<p>"Instead of telling D3 how to do something, tell D3 what you want"</p>
+    		 <a href="https://www.youtube.com/watch?v=C-_Lwm-2Hsg" target ="_blank">Data Visualization with D3.js</a> 
+    		<p>-Ben Clinkinbeard</p>
+    		<p>This is a little like ordering food at a restaurant but the meal hasn't come yet until the order is placed and the cook has prepared the food.</p>
+    		  </section>
+    		     		  		  
+    		   <section>
+    		<h3>D3.js A different Approach</h3>
+    		<p>"Think of D3.js as an assembly line." We first have to put in the parts and provide instructions then as an end result it produces visualizations.</p>
+    		 <a href="http://ui-cloud.com/web-based-visualization-part-1-the-d3-js-key-concept" target ="_blank">Web Based Visualization Part 1 D3.js Key Concept</a>
+    		<p>-Stephen Thomas</p>
+    		  </section>
+    		  
+    		  <section>
+    		  <p>Choose the concept that makes the most sense to you and keep it mind throughout the pie-chart tutorial</p>
+    		    <img src="images/menu.jpg" alt="photo people being served food at restaurant"  title="d3.js"/>
+    		     <a href="Copyright:<a href='http://www.123rf.com/profile_kzenon'>kzenon / 123RF Stock Photo</a>">Photo by K. Zenon</a>
+    		  </section>
+    		  
+    		    
+    		  <section>
+    		  <h3>The Main Concept</h3>
+    		  <p>D3.js written in JavaScript it focuses on Data binding. It works to bind data to DOM Elements</p>
+    		  <p>List of Concepts Include:</p>
+    		  <ul>
+    		  <li>Data Binding</li>
+    		  <li>SVG</li>
+    		  <li>Selections</li>
+    		  <li>Sub Selections</li> 
+    		  <li>Scales</li>
+    		  </ul>    		  
+    		  </section>
+    		  
+    		  <section>
+    		  <h4>My HTML</h4>
+    		  <pre><code>
+&lt;!DOCTYPE html&gt; 
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Info</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+<h1>Valhalla Viking Burgers & Sandwiches-<span>We deliver to the docks!</span></h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about_us.html">About Us</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="delivery.html">Delivery</a></li>
+<li><a href="info.html">Viking History</a></li>
+<li><a href="contact_us.html">Contact Us</a></li>
+</ul>
+</nav>
+    	  
+<div class="containerinfo">
+  
+<div id="head2">
+<p>What did the Vikings Eat?</p>
+</div>
+ 
+<div id="chart"></div>
+   
+<div id="photo1">
+<a href='http://www.123rf.com/profile_diomedes66'>
+<img src="images/ships.jpg" alt="Viking ships photo by Paul Moore diomedes66 /123RF Stock Photo" width="85%" height="85%" /></a>
+</div>
+   
+</div> <!--end of container-->
+     
+<script src="js/d3.min.js"></script>
+<script src="js/piegraph.js"></script>
+</body>
+</html>
+</code>
+</section>
+
+<section>
+<h3>The HTML needed to create a chart:</h3>
+<p>This consists of very little mark-up</p>
+<pre><code>
+&lt;!DOCTYPE html&gt; 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PieChart</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<div id="chart"></div>
+   
+<script src="js/d3.min.js"></script>
+<script src="js/piegraph.js"></script>
+</body>
+</html>
+</code>
+</pre>
+</section>
+
+<section>
+<h3>Note the div tag with an id named "chart".</h3>
+<p>This is where the chart will be within the structure of the web page.</p>
+<p>Make sure to place this line in your webpage when creating a chart</p>
+</p>
+<pre><code>
+<div id="chart"></div>   
+</code>
+</pre>
+</section>
+
+<section>
+<h3>Next go to the js file</h3>
+<h4>For this tutorial, I named my javascript file "piegraph.js"</h4>
+<p>Since d3.js is used for manipulating data one begins with identifying the data to be manipulated.</p>
+</section>
+
+<section>
+<h3>Identify the data:</h3>
+<p>Here is an example of the data used for the pie chart. This data is an array of objects
+data that contains a label and value for each. The pie layout will feed it into an arc shape.</p>
+<pre><code>
+var piedata =[ 
+{label: "Fruit & Nuts", value: 25},
+{label: "Bread/Grains", value: 25},
+{label: "Fish/Meats", value: 15},
+{label: "Cheese", value: 15},
+{label: "Vegetables", value: 20}
+] 
+</code>
+</pre>
+</section>
+
+<section>
+<h4>Set the height, width and radius of the circle</h4>
+<h4>And set the range of colors for the slices</h4>
+<pre><code>
+var width = 400, //the width of the circle
+height = 400,//the height of the circle
+radius = 200, //the radius
+colors = d3.scale.ordinal() //this creates ones own colors
+.range(['#DA635D','#4E4E56','#5B9CA2','#40879F','#B1938B']); //these colors will each be apart of the pie  
+</code>
+</pre>
+</section>
+
+<section>
+<h3>Create a variable and call the d3 pie layout function</h3>
+<p>Next is setting up a function that feeds it some data and returns the values.</p>
+<pre><code>
+var pie = d3.layout.pie() 
+    .value(function(d) {
+   })
+</code>
+</pre>
+</section>
+
+<section>
+<h3>How does one know how to use a pie layout?</h3>
+<p>One can visit Mike Bostock site on github.com. This website explains the layouts available and how to use them.</p>
+<a href="https://github.com/mbostock/d3/wiki/Layouts" target ="_blank">Go to Layouts</a>
+</section>
+
+ <section>
+<h3>Next set up the arc shape of the circle</h3>
+<p>This sets the outer range of the pie chart which will be no bigger than the radius. Thus creating the outer part of the circle.</p>
+<pre><code>
+var arc = d3.svg.arc()
+    .outerRadius(radius) 
+</code>
+</pre>
+</section>
+
+<section>
+<h3>Create a variable called "mychart"</h3>
+<ul>
+<li>Note: in the html there is a div with an id="chart".</li>
+<li>Concept:"selection" Here we select the id chart and append an SVG to it.</li>
+<li>Set the attributes: width and height</li>
+<li>Set the Group. This organizes the shapes as a group</li>
+</ul>
+<pre><code>
+var myChart = d3.select('#chart').append('svg') 
+    .attr('width', width) 
+    .attr('height', height)
+    .append('g')
+</code>
+</pre>
+</section>
+
+<section>
+<h3>Let's take a closer look at the concept of Selection in D3.js</h3>
+<li>This selects an element from the DOM in order to manipulate it in some way.</li>
+<li>Then it appends it to svg to create an svg container where the chart will be placed.</li>
+<p> For Example: In D3.js the commands d3select(#chart) targets just the chart inside the DOM. In contrast the command d3selectAll('p')would target all the p tag elements. This concept is similar to JQuery selection: For example $('body') which selects the body element.</p>
+<pre><code>
+var myChart = d3.select('#chart').append('svg') 
+</code>
+</pre>
+</section>
+
+<section>
+<h3>Position the graphic to the center of the width and height"</h3>
+<ul>
+<li>Use transform and translate to position the data.</li>
+<li>Selects all the paths and then pass the pie data process method created above & the pie data.</li>
+<li>This will return an array of arcs used to draw the shapes</li>
+<li>Finally use the enter command and create a group.</li>
+</ul>
+<pre><code>
+.attr('transform', 'translate('+(width-radius)+','+(height-radius)+')')
+.selectAll('path').data(pie(piedata))
+.enter().append('g') 
+ </code>
+</pre>
+</section>
+
+<section>
+<h3>Creating Slices of the Pie</h3>
+<ul>
+<li>Add class of slice. If one looks inside the html they can see these classes added</li>
+<li>Create a variable and selects all of the groups with a class of slice.</li>
+<li>Creates a path</li>
+<li>Function gives each slice a color and returns colors of each slice</li>
+<li>Passing the data and arc function</li>
+</ul>
+<pre><code>
+.attr('class', 'slice') 
+var slices = d3.selectAll('g.slice') 
+.append('path')
+.attr('fill', function(d, i) { 
+return colors(i); 
+})
+.attr('d', arc)
+ </code>
+</pre>
+</section>
+
+  	<section>
+  	<h3>Check inside the DOM to see what has happened!</h3>
+  	<p>If one looks in the DOM inside each group now has different paths.</p>
+  	  <img src="images/DOM1.png" alt="photo of the Dom when creating a pie chart" title="d3.js"/> 
+  	</section>	
+  	
+  	<section data-background="images/lblue.jpg" data-background-repeat = "repeat" data-background-size="200px">
+    		   <h3>Now we have our Pie Chart!</h3>
+    	  <img src="images/piechart2.png" alt="photo of pie chart"  title="d3.js"/>
+    		  </section>
+  	
+<section>
+<h3>Animate separate pieces of the pie!</h3>
+<p>For fun can add a little extra to make it interactive</p>
+<pre><code>
+.on('mouseover', function (d, i) { //create a mouseover function
+ d3.select(this) // selects slice
+.transition()//calls transition function/method
+.duration(500)//sets time
+.ease('elastic') //sets animation effect
+.attr('transform', function (d) { //transform function..transform moves a shape
+var dist = 10; //how far the slice will go out
+d.midAngle = ((d.endAngle - d.startAngle) / 2) + d.startAngle; //the data objects angle math to move angle outward
+var x = Math.sin(d.midAngle) * dist; //math that moves the angle's x axis
+var y = -Math.cos(d.midAngle) * dist; //math that moves the y axis angle out
+return 'translate(' + x + ',' + y + ')'; //moves the shape coordinates x and y.
+  });
+}).on('mouseout', function (d, i) {
+d3.select(this) //refers to slice
+.transition() //calls transition
+.duration(500)//time after mouse leaves
+.ease('bounce') //applying animation bounce effect
+.attr('transform', 'translate(0,0)') //moves shape back to original coordinates.
+});             
+</code>
+</pre>
+</section>
+
+
+<section>
+<h3>The completed Code in piegraph.js</h3>
+<pre><code>
+var piedata =[ //An array of objects data with values for the piechart The pie layout will feed it into an arc shape...
+
+{label: "Fruit & Nuts", value: 25},
+{label: "Bread/Grains", value: 25},
+{label: "Fish/Meats", value: 15},
+{label: "Cheese", value: 15},
+{label: "Vegetables", value: 20}
+]
+
+var width = 400, //the width of the circle
+height = 400,//the height of the circle
+radius = 200, //the radius
+colors = d3.scale.ordinal() //this creates ones own colors
+.range(['#DA635D','#4E4E56','#5B9CA2','#40879F','#B1938B']); //these colors will each be apart of the pie
+    
+
+var pie = d3.layout.pie() //create a variable and call the d3 pie layout function
+.value(function(d) { //next I'm going to feed it some data that returns values.Thus setting up a function that is passing some the value data
+return d.value; //returns the value For example 25, 
+})
+
+//next set up the arc shape
+var arc = d3.svg.arc() //setting the arc shape
+.outerRadius(radius) //defines the outer range of the pie chart...this will be no bigger than the radius. Creates the outer circle.
+
+
+//creating a variable called myChart Note: in the html there is a div with an id="chart".
+var myChart = d3.select('#chart').append('svg') //variable myChart next select the id chart and append an svg to it and go ahead and set attributes..
+.attr('width', width) //this is equal to the variable width above
+.attr('height', height)//this sets up the height
+.append('g') //this organizes the shapes as a group. next we are positioning the group.
+    
+//this positions the graphic to the center of the width and height
+.attr('transform', 'translate('+(width-radius)+','+(height-radius)+')')
+//feed the data
+.selectAll('path').data(pie(piedata))//selects the path and then passes the piedata process method created above and the pie data. this wil return an array of arcs used to draw the shapes
+.enter().append('g') //enter command and append/ create a group
+      
+//If one looks in the dom inside each group has different paths. we need to place the labels in each path..so we need to create a group for each path and place the labels in it. 
+        
+.attr('class', 'slice') //add a class of 'slice' //if one looks inside the html they can see these classes added.
+
+var slices = d3.selectAll('g.slice') //selects all of the groups with a class of slice.
+.append('path') //append/create the path
+.attr('fill', function(d, i) { //this function gives it color
+return colors(i); //return colors for each slice
+})
+.attr('d', arc) //passing the data and the arc function
+       
+//animate seperate pieces 
+       
+.on('mouseover', function (d, i) {
+  
+d3.select(this) // selects slice
+.transition()//calls transition function/method
+.duration(500)//sets time
+.ease('elastic') //sets animation effect
+.attr('transform', function (d) { //transform function..transform moves a shape
+var dist = 10; //how far the slice will go out
+d.midAngle = ((d.endAngle - d.startAngle) / 2) + d.startAngle; //the data objects angle math to move angle outward
+var x = Math.sin(d.midAngle) * dist; //math that moves the angle's x axis
+var y = -Math.cos(d.midAngle) * dist; //math that moves the y axis angle out
+return 'translate(' + x + ',' + y + ')'; //moves the shape coordinates x and y.
+});
+}).on('mouseout', function (d, i) {
+d3.select(this) //refers to slice
+.transition() //calls transition
+.duration(500)//time after mouse leaves
+.ease('bounce') //applying animation bounce effect
+.attr('transform', 'translate(0,0)') //moves shaape back to original coordinates.
+});
+
+//end of arc
+       
+//creating the text selectall the group of slices
+var text = d3.selectAll('g.slice') //this will select all groups with a class of slice
+.append('text')//create text element
+.text(function(d, i) { //create a text method with a function that passes the data 
+return d.data.label; //returning the data objects that's inside the data. Thus returning the value and the label
+})
+.attr('text-anchor', 'middle') //creates a text anchor
+.attr('fill', 'white')//filling the text with white font.
+.attr('transform', function(d) { //d using the objects data
+d.innerRadius = 0; //how far away from the radius. the text needs to be moved further away.
+d.outerRadius = radius;
+return 'translate('+ arc.centroid(d)+')' //method to find the center of the data for each slice.
+})   
+</code>
+</pre>
+</section>
+
+<section>
+<h4>Let's view the completed pie chart and take one last glance at all the code used!</h4>
+</section>
+  	     	   		     
+<section>
+<h3>Learn more and visit these online references</h3>
+<h4>Links to Visit</h4>
+<a href="http://d3js.org/" target ="_blank">Go to D3js.org</a>
+<a href="http://techslides.com/over-2000-d3-js-examples-and-demos/" target ="_blank">Go to D3js Examples and Demos</a>
+<a href="https://www.youtube.com/watch?v=C-_Lwm-2Hsg" target ="_blank">Data Visualization with D3.js</a>
+ <a href="http://ui-cloud.com/web-based-visualization-part-1-the-d3-js-key-concept" target ="_blank">Web Based Visualization Part 1 D3.js Key Concept</a> 
+ <a href="http://www.lynda.com/Ray-Villalobos/832401-1.html"target ="_blank">Data Visualization with D3.js on Lynda.com</a> 
+ <a href="https://deveo.tv/episodes/d3-js-creating-a-bar-chart" target ="_blank">D3.js Creating a bar chart with Scott Becker</a> 
+<a href="http://codepen.io/scrimothy/details/bnCyj/" target ="_blank">CodePen D3 Pie Chart Jim Warwick</a>  
+</section>
+
+<section>
+<h3>References</h3>
+<p>Becker, S. (2013, July 1). D3.js: Creating a Bar Chart | Deveo.TV. Retrieved August 18, 2014.</p>
+<p>Bostock, M. (2010, January 1). D3.js - Data-Driven Documents. Retrieved August 18, 2014.</p>
+<p>Stephen, T. (2012, November 5). Web-Based Visualization Part 1: The D3.js Key Concept. Retrieved August 18, 2014.</p>
+<p>Villalobos, R. (2014, August 7). Ray Villalobos at Lynda.com. Retrieved August 18, 2014.</p>
+<p>Warwick, J. (2013, November 26). D3 Pie Chart. Retrieved August 18, 2014.</p>
+
+</section>
+    		     	
+		</div>
+
+		</div>
+</body>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'serif', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
