@@ -4,6 +4,21 @@ window.onload = function() {
 	var ctx = theCanvas.getContext("2d");
 	if (ctx) {
 		
+			fillStyle="rgb(0,8,233)";
+strokeStyle="rgb(0,0,0)";
+lineWidth=1;
+fillRect(121,86,179,88);
+strokeRect(121,86,179,88);
+fill();
+stroke();
+
+
+
+			
+			
+			
+			
+			
 				
 						
 		}

@@ -1,0 +1,172 @@
+<!doctype html>
+<!--Amy Littlefield-Bousamra
+PWA2 admin page for chefkeeper.org
+Instructor: Crystal Silvestro
+Full Sail University-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>dashboard</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<!-- end CSS-->
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<img alt="full screen background image" src="images/bkgr3.jpg" id="bg3" />
+
+<div class ="container">
+
+    <img alt="full screen background image" src="images/tableclothbg.jpg" id="full-screen-background-image" />
+
+    <header>
+
+        <h1>chefkeeper.org</h1>
+
+
+        <div class="userid">Hello Amy!</div>
+
+
+<form>
+    <div class="logoutbox">
+        <input name="logOut" type="button" id="logOut" value="Sign Out" />
+    </div>
+</form>
+
+    </header>
+
+<div id="dashb">
+   <h4>Welcome to the dashboard!</h4>
+    </div>
+
+    <div id="adminp">
+    <p>Follow the prompts and begin creating your online cookbook!</p>
+    </div>
+
+
+
+<div id ="logoadmin"> <!--to make image editable for users in dashboard-->
+    <img src="images/chef.png" alt="logo of a cartoon chef" width="270px"/>
+    <p>Optional: Click the chef to upload your own logo or picture here!</p>
+</div>
+
+<div id="foodpic">
+    <p>Optional Image: Click and Upload A Picture Here!</p>
+</div>
+   </div>
+
+    <!--applying/adjusting this accordian to my code from: a blog by vivekarora -->
+<div id="underaccord">
+    <p>Begin creating your cookbook here! Add a new recipe below and click
+       to view your online cookbook, add a recipe to your event/meal planner or view your image gallery! </p>
+</div>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <img src="images/book.png" width="110" height="110"class="masterTooltip" title="Go to my Cookbook">
+            <div class="type"></div>
+        </div>
+
+        <div class="data">
+            <p>Organize save and add your favorite recipes to the cookbook!
+             Go to my Cookbook...<button class="projectsbtn">Cookbook</button></p>
+        </div>
+
+        <div class="accordion-item">
+            <img src="images/menup.png" width="110" height="110" class="masterTooltip" title="Go to the Meal Planner">
+            <div class="type"></div>
+        </div>
+
+        <div class="data">
+            <p> Have an event to plan for? Use the Meal Planner to create a grocery list,
+             and plan a menu.<br>Go to the Meal Planner... <button class="taskbtn">Meal Planner</button></p>
+        </div>
+
+        <div class="accordion-item">
+            <img src="images/gal.png" width="110" height="110" class="masterTooltip" title="Go to the Image Gallery"><br>
+            <div class="type"></div>
+        </div>
+
+        <div class="data">
+            <p>Visit your image library of recipes! Upload and share photos.<br>
+            Go to the Image Gallery...<button class="userbtn">Image Gallery</button></p>
+        </div>
+
+    </div> <!--closes accordian-->
+
+
+    <!-- <div>
+         <ul id="navtabs">
+          <li><a href="#Entrees"><img src="images/taborange.png" id="taborange"></a></li>
+          <li><a href="#Appetizers"><img src="images/tabteal.png" id="tabteal"></a></li>
+          <li><a href="#Pastries/Breads"><img src="images/tabred.png" id="tabred"></a></li>
+          <li><a href="#Soups/Salads"><img src="images/tabblack.png" id="tabblack"></a></li>
+          <li><a href="#Sauces"><img src="images/taborange.png" id="taborange2"></a></li>
+          <li><a href="#Desserts"><img src="images/tabteal.png" id="tabteal2"></a></li>
+          <li><a href="#Beverages"><img src="images/tabred.png" id="tabred2"></a></li>
+          </ul>
+      </div>-->
+
+<div id="hadmin">
+    <p> Add a new recipe below!</p>
+    </div>
+
+
+
+<div id="createrecipe">
+        <form>
+            <label>Add a Title to your Cookbook:</label><br>
+            <input name="Choose Title" type="text" id="title1" class="masterTooltip" title="For example, 'Dee Dee's Dishes'" required/><br>
+            <label>Choose Category:</label><br>
+            <input name="Choose Category" type="text" id="category" class="masterTooltip" title= "For example, 'Entree'" required/><br>
+            <label>Title of Recipe:</label><br>
+            <input name="title" type="text" id="title" placeholder="Enter Title of Recipe"/><br>
+            <label>Type the Ingredients here</label><br>
+            <textarea rows="15" cols="60" name="ingredients" id="ingredients"></textarea><br>
+            <label>Type Cooking instructions here</label><br>
+            <textarea rows="15" cols="60" name="message" id="directions"></textarea><br>
+            <input name="save" type="button" id="save" value="SAVE RECIPE" class="masterTooltip" title="Yes! Save this recipe!" required/><br>
+        </form>
+ </div>
+
+</div> <!--end of container-->
+
+
+<!-- jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../jquery-1.9.1.js"></script>
+
+    <script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
+
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<!-- plugins -->
+<!-- main -->
+<script type="text/javascript" src="js/main.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

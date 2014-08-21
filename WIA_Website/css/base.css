@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700|Exo+2:300,600);
+ 
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+ 
+/* My Colors
+	red: #DA635D
+	Abbey Blue: #4E4E56
+	Blue: #5B9CA2
+	Light Blue: #40879F
+	Brown: #B1938B
+	Creme Color/orange wafer: #DcD0C0
+	creme: #FDF5E6
+	text color: #5B9CA2
+		
+*/
+ 
+body {
+  font-family: "Exo 2", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  background: #197c9E;/*#DcD0C0;*/
+  color: #5B9CA2;
+}
+ 
+strong {
+  font-weight: 600;
+}
+ 
+h4, h5, h6 {
+  font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #DA635D; 
+  font-size: 1.2em;
+  margin-bottom:.4em;
+  margin-left:20px;
+}
+
+
+h2{
+  font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+  color: #FDF5E6; 
+  font-size: 2em;
+  margin-bottom:.4em;
+ -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-weight: 200;
+  margin-left: 80px;
+  padding-top: 10px;
+}
+
+
+h3{
+  font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #DA635D; 
+  font-size: 1.2em;
+  margin-bottom:.4em;
+  margin-left:20px;	
+
+}
+
+h1{
+  font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #DA635D; /*#B52735;*/
+  font-size: 4em;
+  margin-bottom: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h1 a{
+  font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #DA635D; /*#B52735;*/
+  font-size: 80px;
+  margin-bottom: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-decoration: none;
+}
+
+
+
+
+p {
+  margin-bottom: .5em;
+}
+ 
+.container {
+  width: 100%;
+  margin: 0 auto;  
+  background: #FDF5E6;
+  height:625px;
+}
+
+ 
+@media all and (max-width: 500px) {
+  h2 {
+    padding-left: 10px;
+    text-align: center;
+  }
+  
+ 
+#graphic {
+  margin: 0 auto;
+}
