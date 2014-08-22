@@ -96,7 +96,7 @@ p {
 .container {
   width: 100%;
   margin: 0 auto;  
-  background: #FDF5E6;
+  background-color: #FDF5E6;
   height:625px;
 }
 

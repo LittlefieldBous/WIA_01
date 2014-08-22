@@ -31,11 +31,12 @@ nav li a{
 
 #sandwich{
 	clear:both;
+	background-color:#FDF5E6; 
 }
 
 #chart{
 
-position: absolute; top: 210px; left:100px;
+position: absolute; top: 220px; left:40px;
 	
 }
 
@@ -45,20 +46,21 @@ span{
 
 
 #head2 {
-position: absolute; top:80px; left:60px;
+position: absolute; top:174px; left:76px;
+font-size: 30px;
 }
 
 
 #photo1{
-	position: absolute; top: 180px; left:550px;
+	position: absolute; top: 170px; left:500px;
 }
 
-#head2 p{
+/*#head2 p{
 	font-size: 30px;
 	margin-top:40px;
     padding-top: 40px;
 	margin-left: 75px;
-}
+}*/
 
 .slice text {
             font-size: 14pt;
