@@ -11,9 +11,13 @@ Full Sail University
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+ <script type="text/javascript" src="includes/easeljs.js"></script>
+ <script src="includes/jquery-1.6.2.min.js"></script>
+ <script type="text/javascript" src="includes/jquery-1.9.1.js"></script>
+
 
 </head>
 
@@ -31,6 +35,7 @@ Full Sail University
 
     <nav>
         <ul>
+            <li><a href="index.html">Valhalla Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="delivery.html">Delivery</a></li>
@@ -39,28 +44,51 @@ Full Sail University
         </ul>
     </nav>
     
- <div id="contact">
-    <img src="images/islandview.jpg" alt="image of S. manitou island view of lake Michigan-photo by developer-AmyBousamra" width="100%" height="100%"/>
-  </div>
-<p>Place an order and Contact us at...</p>
+
+<canvas id="canvas2" width = "600" height="500">
+   		Canvas is not supported
+   </canvas>
+   
+   
+   <audio id="audio2" src="audio/ahoy.mp3"controls autoplay>
+	Audio is not supported
+	</audio>
+	
+<div id="infobox">
+<h3>Call to place an order at:<br>231-947-3772</h3>
+<h4>Summer Hours: M-TH 11AM to 7PM & Fri-Sun 11AM-8PM.</h4>
+<p> We deliver! Take out is also available at our cafe in downtown Suttons Bay.</p>
+</div>
+
+<div id="slide">
+<p><strong>Viking Trivia:</strong><br>Where did the word Ahoy originate?</p>
+<button id="slidebtn">Click to reveal the answer</button>
+</div>
+
+ <div id="trivia">
+ <p>The Answer: The exact origins of the word "ahoy" are unknown. Only theories.
+	 One theory is that "ahoy" derived from the Old Norse greeting, "Heill" then became
+	 "hail" which eventually became "ahoy in Middle English. Consequently Bell's preferred
+	 way to answer the phone was "ahoy-hoy"</p>
+ </p>
+    </div>
+
+
 </div> <!--end of container-->
 
 
-<!--<footer> need to work on...was having trouble getting it to the bottom?
-    <p>PWA2: &copy;chefkeeper.org</p>
-</footer>-->
-
 <!-- jquery -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+ <script type = "text/javascript" src = "js/audioControl.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="../jquery-1.9.1.js"></script>
 
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
 <!-- plugins -->
 <!-- main -->
-	
-   
-    <script type="text/javascript" src="js/main.js"></script>
-   
+
+<script type="text/javascript" src="js/animate2.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>  
 
 
 </body>
@@ -69,7 +97,7 @@ Full Sail University
 
 
 
-
+ 
 
 
 

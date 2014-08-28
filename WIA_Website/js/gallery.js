@@ -18,6 +18,9 @@ window.onload = function() {
 					$("#content").html('<img src="'+image_href+'"/>');
 					
 					$("#lightbox").fadeIn(1000);
+					$("#togglebtn").hide();
+					
+
 					
 				
 				}else{

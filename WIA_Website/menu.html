@@ -14,26 +14,23 @@ Full Sail University
   <title>Menu</title>
  <link rel="stylesheet" href="css/base.css">
  <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" type="text/css"  href="css/lBox.css" media="screen" />
+ <link rel="stylesheet" type="text/css"  href="css/gallery.css" media="screen" />
  <script src="includes/jquery-1.6.2.min.js"></script>
-
+ <script type="text/javascript" src="includes/jquery-1.9.1.js"></script>
 </head>
 
 <body>
 
-<!--<img alt="full screen background image" src="images/bkgr1.jpg" id="pg1bg" />-->
-
-
-
  <header>
       <h1><a href="index.html">Valhalla</a><h1> 
-      <h2>Viking Burgers & Sandwiches- We deliver to the docks!</h2>
+      <h2>Viking Burgers & Sandwiches - We deliver to the docks!</h2>
   </header>
 
 <div class="container">
 
     <nav>
         <ul>
+            <li><a href="index.html">Valhalla Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="delivery.html">Delivery</a></li>
@@ -42,31 +39,94 @@ Full Sail University
         </ul>
     </nav>
     
+<div id="wrapper">
+
+
+<button id="fadebtn">View Our Menu Prices</button>
+
+<div id="menubox">
+ <img src="images/Valhallamenu.jpg" alt="Valhalla Menu">	  
+</div>
+
+     <div id="menulist">
+	<h3>Our Burgers & Sandwiches</h3>
     
- <div id="shore">
-    <img src="images/sand1.jpg" alt="image of S. manitou island view of lake Michigan-photo by developer-AmyBousamra" width="100%" height="100%"/>
-  </div>
+	<a href="images/galsteak.jpg" class="lightbox_trigger">
+      <img src="images/smsteak.jpg" alt="Image 1" width="150" height="150">
+       </a>
+			
+				<a href="images/galburg.jpg" class="lightbox_trigger">
+        			<img src="images/smallbrat.jpg" alt="Image 2" width="150" height="150">
+        		</a>
+                
+				<a href="images/galpork.jpg" class="lightbox_trigger">
+        			<img src="images/smallpork.jpg" alt="Image 3" width="150" height="150">
+        		</a>
+                
+				<a href="images/galsalami.jpg" class="lightbox_trigger">
+        			<img src="images/smsand.jpg" alt="Image 4" width="150" height="150">
+        		</a>
+        		
+        		<a href="images/galreuben.jpg" class="lightbox_trigger">
+        			<img src="images/smreuben.jpg" alt="Image 4" width="150" height="150">
+        		</a>
+        		
+        		<a href="images/galfreya.jpg" class="lightbox_trigger">
+        			<img src="images/smslider.jpg" alt="Image 4" width="150" height="150">
+        		</a>
 
-    <section id ="sandwich">
-    <h3>Sandwiches & Burgers</h3>
+                <a href="images/galsalmon.jpg" class="lightbox_trigger">
+        			<img src="images/smsalmon.jpg" alt="Image 5" width="150" height="150">
+        		</a>
+                
+                <a href="images/galcatch.jpg" class="lightbox_trigger">
+        			<img src="images/smfish.jpg" alt="Image 6" width="150" height="150">
+        		</a>
+        		
+        		<a href="images/galnanna.jpg" class="lightbox_trigger">
+        			<img src="images/smveg.jpg" alt="Image 6" width="150" height="150">
+        		</a>
+        		
+        		<a href="images/galhamch.jpg" class="lightbox_trigger">
+        		   <img src="images/smcheese.jpg" alt="Image 6" width="150" height="150">
+        		</a>
+        		
+        		<a href="images/galtaco.jpg" class="lightbox_trigger">
+        		   <img src="images/smtaco.jpg" alt="Image 6" width="150" height="150">
+        		</a>
+        		
+        		<a href="images/galchix.jpg" class="lightbox_trigger">
+        		   <img src="images/smchix.jpg" alt="Image 6" width="150" height="150">
+        		</a>
 
-  <div class="item">The Oseberg ship Steak and Cheese</div>
-  <div class="item">The Viking Brat Burger</div>
-  <div class="item">Thor's Pulled Pork BBQ Burger</div>
-  <div class="item">Nanna's Nature burger</div>
-  <div class="item">Odin's Smoked Turkey and Bacon</div>
-  <div class="item">Freya's Perch Sandwich</div>
-  <div class="item">Ran's smoked Whitefish Sandwich</div>
-  </section>
 
+  </div> <!-- end of menulist-->             		
+	
+</div> <!--end of wrapper-->
+
+<div id="clear"></div>
+
+<!--show hide jquery-->
+
+    <div id="theDiv">
+    <p>Baldr's Quadruple Decker:</p>
+     <img src="images/thvc.jpg" alt="Image 6" width="150" height="150">
+    </div>
+    
+      
+   <div id="challenge">
+    <img src="images/vchall.jpg" alt="about the viking challenge ">
+     <button id="toggle">Click to View this month's Viking Challenge!</button>
+
+   </div>
+   
+    <div id="temp">
+    <img src="images/temp.jpg" alt="temp image for toggle ">
+     </div>
 
 
 </div> <!--end of container-->
 
-
-<!--<footer> need to work on...was having trouble getting it to the bottom?
-    <p>PWA2: &copy;chefkeeper.org</p>
-</footer>-->
 
 <!-- jquery -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -75,7 +135,10 @@ Full Sail University
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>-->
 
 <!-- main -->
-	
+	<script type="text/javascript" src="js/ShowHide.js"></script>
+	<script type="text/javascript" src="js/fade.js"></script>
+
+   
     <script type="text/javascript" src="js/gallery.js"></script>
    
 </body>

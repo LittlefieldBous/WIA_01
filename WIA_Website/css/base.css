@@ -12,7 +12,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	Creme Color/orange wafer: #DcD0C0
 	creme: #FDF5E6
 	text color: #5B9CA2
-		
+    d.blue: #197c9E;
 */
  
 body {
@@ -20,7 +20,7 @@ body {
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.2em;
-  background: #197c9E;/*#DcD0C0;*/
+  background: #197c9E; /*#DcD0C0;*/
   color: #5B9CA2;
 }
  
@@ -28,13 +28,27 @@ strong {
   font-weight: 600;
 }
  
-h4, h5, h6 {
+h5 {
   font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 600;
-  color: #DA635D; 
+  font-weight: 200;
+  color: #4E4E56;
+  font-size: 1.2em;
+  margin-top: 6px;
+  text-align:right;
+  margin-right:20px;
+
+  
+}
+
+h4 {
+  position:relative;
+  font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
+  color: #197C9e; 
   font-size: 1.2em;
   margin-bottom:.4em;
   margin-left:20px;
+  text-align: center;
 }
 
 
@@ -42,12 +56,13 @@ h2{
   font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
   color: #FDF5E6; 
   font-size: 2em;
-  margin-bottom:.4em;
+  margin-bottom:.6em;
  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-weight: 200;
-  margin-left: 80px;
-  padding-top: 10px;
+ margin:10px; 
+ padding:10px; 
+ text-align:center;
 }
 
 
@@ -55,30 +70,26 @@ h3{
   font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600;
   color: #DA635D; 
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom:.4em;
-  margin-left:20px;	
-
 }
 
 h1{
   font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
-  margin-top: 40px;
-  margin-left: 10px;
+  margin-top:20px;
+  padding-top:10px; 
+  text-align:center; 
   color: #DA635D; /*#B52735;*/
   font-size: 4em;
-  margin-bottom: 30px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: black; 
 }
 
 h1 a{
   font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 400;
-  margin-top: 40px;
-  margin-left: 10px;
-  color: #DA635D; /*#B52735;*/
+  font-weight: 400;;  
+   color: #DA635D; /*#B52735;*/
   font-size: 80px;
   margin-bottom: 30px;
   -webkit-text-stroke-width: 1px;
@@ -87,23 +98,23 @@ h1 a{
 }
 
 
-
-
 p {
   margin-bottom: .5em;
 }
  
 .container {
-  width: 100%;
+  width: 960px;
   margin: 0 auto;  
-  background-color: #FDF5E6;
-  height:625px;
+  background-color:#FDF5E6; 
+  height:650px;
 }
 
  
 @media all and (max-width: 500px) {
   h2 {
     padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
     text-align: center;
   }
   

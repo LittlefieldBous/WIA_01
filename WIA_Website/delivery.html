@@ -11,26 +11,22 @@ Full Sail University
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <title>Delivery</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/interactive_map.css" />
+		<script type="text/javascript" src="includes/jquery-1.5.min.js"></script>
+		<script type="text/javascript" src="js/interactive_map.js"></script>
 </head>
 
 <body>
 
-<!--<img alt="full screen background image" src="images/bkgr1.jpg" id="pg1bg" />-->
-
-
-
-<header>
-      <h1><a href="index.html">Valhalla</a><h1> 
-      <h2>Viking Burgers & Sandwiches- We deliver to the docks!</h2>
- </header>  
 
 <div class="container">
 
     <nav>
         <ul>
+            <li><a href="index.html">Valhalla Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="delivery.html">Delivery</a></li>
@@ -38,19 +34,201 @@ Full Sail University
             <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
     </nav>
-    
-     <div id="delivery">
-    <img src="images/docklg.jpg" alt="image of S. manitou island view of lake Michigan-photo by developer-AmyBousamra" width="100%" height="100%"/>
-  </div>
+         
+ <div class="map_container">
+
+ 	  <a class="dot" style="top:90px; left:316px;"  city="NP" marina="Northport"></a>
+ 	  <a class="dot" style="top:190px; left:322px;" city="OB" marina="Omena"></a>
+ 	  <a class="dot" style="top:265px; left:286px;" city="SB" marina="SuttonsBay"></a>
+ 	  <a class="dot" style="top:250px; left:240px;" city="LL" marina="Narrows"></a>
+ 	  <a class="dot" style="top:200px; left:180px;"  city="FT" marina="Fishtown"></a>
+ 	  <a class="dot" style="top:260px; left:160px;" city="CV" marina="GoodHarbor"></a>
+ 	  <a class="dot" style="top:196px; left:212px;"  city="FT" marina="NedowsBay"></a>
+ 	  <a class="dot" style="top:236px; left:328px;" city="SB" marina="StonyPoint"></a>
+ 	  <a class="dot" style="top:360px; left:260px;" city="SB" marina="Bingham"></a>
+ 	  <a class="dot" style="top:458px; left:270px;" city="TC" marina="CedarLake"></a>
+ 	  <a class="dot" style="top:472px; left:290px;" city="TC" marina="WestBay"></a>
+ 	  <a class="dot" style="top:340px; left:62px;"  city="GA" marina="CrystalHarbor"></a>
+
+<!-- Form -->
+			<form id="mapForm" name="mapForm" class="form_city" method="post" action="">
+				<select name="city" id="city">
+					<option value="NP">NorthPort</option>
+					<option value="OB">Omena Bay</option>
+					<option value="SB">Suttons Bay</option>
+					<option value="LL">Lake Leelanau</option>
+					<option value="FT">Fishtown-Leland</option>
+					<option value="CV">Cedar</option>
+					<option value="GA">Glen Arbor</option>
+					<option value="TC">Traverse City</option>
+					<option value="ALL" selected="selected">Show All</option>
+				</select>
+			</form>
+						
+			<!-- City details -->
+			<div class="detail_container">
+				<!-- City -->
+				<div class="city_detail">
+				<img class="city_photo" src="images/thisle.jpg" alt="beach" width="450" height="185"/>
+
+			<h3>Valhalla</h3>
+		    <p>Here in Northern Michigan's majestic "pinky", We provide the food while the lakes provide the fun! Check out our most frequent delivery marinas & beaches!</p>
+			</div>
+			</div>
+			
+<div id="mapblurb2">
+ <h3>Call to place an order at 231-947-3772</h3>
+ </div>
+	
+	<div id="mapblurb3">
+<p>Summer Hours: M-TH 11AM to 7PM & Fri-Sun 11AM-8PM. Take out is available at our cafe in downtown Suttons Bay.</p> 
+</div>
+
+		<div id="mapblurb">
+		<h1>Valhalla Viking Burgers & Sandwiches</h1> 
+		<h4>Locate the town to discover our most visited Marinas!</h4>
+		<p class="grey">We deliver right to the docks and beaches covering beautiful Leelanau County and West Grand Traverse Bay.</p>
+	</div>	
+ 	
+
+			
+	</div> <!--end of container-->
+	
+		<!-- clicked info-->
+		
+		<div class="city_detail_container">
+			<!-- City -->
+			<div class="city_detail" id="Northport">
+				<img class="city_photo" src="images/thnp.jpg" alt="northport marina" width="450" height="185"/>
+				<div class="city_info">
+					<h3>Northport Marina</h3>
+				 <p>We deliver to the docks of Northport Marina & Beach!</p>
+				</div>
+			</div>
+		
+				
+			<!-- City -->
+			<div class="city_detail" id="Omena">
+				<img class="city_photo" src="images/thob.jpg" alt="omena bay" width="450" height="185"/>
+				<div class="city_info">
+					<h3>Omena Bay</h3>
+					<p>We deliver to the docks of Omena Bay & Beach!</p>				
+				</div>
+			</div>
+			
+			<!-- City -->
+			<div class="city_detail" id="SuttonsBay">
+				<img class="city_photo" src="images/thsb.jpg" alt="suttons bay" width="450" height="185"/>
+				<div class="city_info">
+					<h3>Suttons Bay</h3>
+					<p>Centrally located in Suttons Bay. We deliver to all the beaches and marinas along Lake Michigan as well North & South Lake Leelanau!</p>
+				</div>
+			</div>
+			
+			<!-- City -->
+			<div class="city_detail" id="StonyPoint"><a href="https://commons.wikimedia.org/wiki/File:Old_Mission_Peninsula.jpg#mediaviewer/File:Old_Mission_Peninsula.jpg"><img class="city_photo" src="images/thstonypoint.jpg" alt="Stony Point Peninsula photo by stanthejeep-creativecommons-Wikimedia" width="450" height="185"/></a>
+			<div class="city_info">
+					<h3>Stony Point Peninsula</h3>
+					<p>We deliver to the beaches, docks, boat-launches and B&B's on Stony Point!</p>
+				</div>
+			</div>
+						
+			<!-- City -->
+		<div class="city_detail" id="Narrows"><a href="https://commons.wikimedia.org/wiki/File:Lake_Leelanau_Narrows_Bridge.jpg#mediaviewer/File:Lake_Leelanau_Narrows_Bridge.jpg"><img class="city_photo" src="images/thnarrows.jpg" alt="Lake Leelanau_Narrows Bridge photo by Rochelle Briggman-Wikimedia Commons" width="450" height="185"/></a> 				
+				<div class="city_info">
+					<h3>Lake Leelanau</h3>
+					<p>We deliver to the docks on the narrows of Lake Leelanau!</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+			
+			<!-- City -->
+			<div class="city_detail" id="Fishtown">
+			
+			<a href="https://commons.wikimedia.org/wiki/File:Leland_Michigan_aerial_view.jpg#mediaviewer/File:Leland_Michigan_aerial_view.jpg">
+			<img class="city_photo" src="images/thfishtown.jpg" alt="aerial photo of FishTown by U.S. Army Corps of Engineers, photographer not specified or unknown" width="450" height="185"/></a>
+			
+				<div class="city_info">
+					<h3>Leland</h3>
+					<p>Proud supporters of the Manitou Island Transit! We deliver to Fishtown!</p>
+				</div>
+				<div class="clear_both"></div>
+			  </div>
+
+			<!-- City -->
+			<div class="city_detail" id="NedowsBay">
+			
+			<a href="https://en.wikipedia.org/wiki/File:Lake_Leelanau_south.jpg#mediaviewer/File:Lake_Leelanau_south.jpg">
+				<img class="city_photo" src="images/thnedows.jpg" alt="photo of Lake Leelanau south by hgjudd" width="450" height="185"/></a>
+				 
+				<div class="city_info">
+					<h3>Leland-Nedows Bay</h3>
+					<p>We deliver to Nedows Bay beach and dock!</p>
+				</div>
+				<div class="clear_both"></div>
+			  </div>
+				
+			<!-- City -->
+			<div class="city_detail" id="GoodHarbor">
+				<img class="city_photo" src="images/gh.jpg" alt="Good Harbor Beach" width="450" height="185"/> 
+				<div class="city_info">
+					<h3>Cedar - Good Harbor Beach</h3>
+					<p>We deliver to Good Harbor beach!</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+			
+			
+			<!-- City -->
+			<div class="city_detail" id="CrystalHarbor">
+					<img class="city_photo" src="images/thcl2.jpg" alt="Glen Arbor" width="450" height="185"/> 
+				<div class="city_info">
+					<h3>Glen Arbor</h3>
+				<p>We deliver to Glen Arbor's Crystal Harbor Marina!</p>
+				</div>
+				<div class="clear_both"></div>
+			</div>
+			
+			
+			<!-- City -->
+			<div class="city_detail" id="WestBay">
+				<img class="city_photo" src="images/thgtbay.jpg" alt="Traverse City" width="450" height="185"/> 
+				<div class="city_info">
+					
+					<h3>Traverse City</h3>
+					<p>We deliver to Traverse City West Marina, Cedar Lake and Elmwood Township Marina!</p>				</div>
+				<div class="clear_both"></div>
+			</div>
+			
+			<!-- City -->
+			<div class="city_detail" id="CedarLake">
+				<img class="city_photo" src="images/ga.jpg" alt="Cedar Lake West Traverse City" width="450" height="185"/> 
+				<div class="city_info">
+					
+					<h3>Traverse City</h3>
+					<p>We deliver to Cedar Lake!</p>				
+					</div>
+				<div class="clear_both"></div>
+			</div>
+			
+			
+			<!-- City -->
+			<div class="city_detail" id="Bingham">
+				<img class="city_photo" src="images/thsb.jpg" alt="North Lake Leelanau" width="450" height="185"/> 
+				<div class="city_info">
+					
+					<h3>Traverse City</h3>
+					<p>We deliver to North Lake Leelanau-Bingham Road!</p>				
+					</div>
+				<div class="clear_both"></div>
+			</div>
+
+			
+
+			
+					
+					
   
-
-
-<p>This will be the deliver page with a map...</p>
-
-</div> <!--end of container-->
-
-
-
 
 <!-- jquery -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -61,7 +239,6 @@ Full Sail University
 <!-- main -->
 	
    
-    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>

@@ -15,9 +15,9 @@ var piedata =[ //An array of objects data with values for the piechart The pie l
 {label: "Vegetables", value: 20}
 ]
 
-var width = 400, //the width of the circle
-    height = 400,//the hieght of the circle
-    radius = 200, //the radius
+var width = 380, //the width of the circle
+    height = 380,//the hieght of the circle
+    radius = 180, //the radius
     colors = d3.scale.ordinal() //this creates ones own colors
     .range(['#DA635D','#4E4E56','#5B9CA2','#40879F','#B1938B']); //these colors will each be apart of the pie
     
